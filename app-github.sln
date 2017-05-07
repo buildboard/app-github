@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.0.0
+MinimumVisualStudioVersion = 10.0.0.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BB.App.Github", "src/BB.App.Github/BB.App.Github.csproj", "{5421D237-EEF4-4C36-9234-5C3B4027ADCA}"
+EndProject
+Project("{FC4892A9-6766-4260-880C-B704FD7012B8}") = "app-github.tests", "test/BB.App.Github.Tests/BB.App.Github.Tests.csproj", "{4995C3B5-6D53-4EED-9788-8C9393754F97}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5421D237-EEF4-4C36-9234-5C3B4027ADCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5421D237-EEF4-4C36-9234-5C3B4027ADCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5421D237-EEF4-4C36-9234-5C3B4027ADCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5421D237-EEF4-4C36-9234-5C3B4027ADCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4995C3B5-6D53-4EED-9788-8C9393754F97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4995C3B5-6D53-4EED-9788-8C9393754F97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4995C3B5-6D53-4EED-9788-8C9393754F97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4995C3B5-6D53-4EED-9788-8C9393754F97}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
