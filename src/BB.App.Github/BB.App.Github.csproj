@@ -1,5 +1,4 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
-
   <PropertyGroup Label="Build">
     <TargetFramework>netcoreapp1.1</TargetFramework>
     <!-- Used to store connection strings and other sensitive settings, so you don't have to check them into your source
@@ -14,7 +13,6 @@
   <PropertyGroup>
     <PackageTargetFallback Condition="'$(TargetFramework)' == 'netcoreapp1.1'">$(PackageTargetFallback);portable-net45+win8+wp8+wpa81</PackageTargetFallback>
   </PropertyGroup>
-
   <PropertyGroup Label="Package">
     <Version>1.0.0</Version>
     <Authors>Project Author</Authors>
@@ -23,7 +21,6 @@
     <Description>Project Description</Description>
     <Copyright>Copyright © Project Author. All rights Reserved</Copyright>
   </PropertyGroup>
-
   <ItemGroup Label="Package References">
     <PackageReference Include="Boilerplate.AspNetCore" Version="2.2.2" />
     <PackageReference Include="Boilerplate.AspNetCore.Swagger" Version="2.1.1" />
@@ -52,7 +49,6 @@
     <PackageReference Include="NWebsec.AspNetCore.Mvc" Version="1.0.0" />
     <PackageReference Include="Newtonsoft.Json" Version="10.0.2" />
   </ItemGroup>
-
   <!-- Tools - Command line tools which can be run using 'dotnet [Tool Name]'. -->
   <ItemGroup Label="Tools">
     <!-- dotnet watch - which allows you to edit code and refresh the browser to see your changes while the application is running. -->
@@ -62,12 +58,13 @@
     <!-- dotnet aspnet-codegenerator - Code Generation tool for ASP.NET Core used for generating controllers and views. -->
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.0" />
   </ItemGroup>
-
+  <ItemGroup>
+    <Folder Include="wwwroot" />
+  </ItemGroup>
   <Target Name="PrepublishScript" BeforeTargets="PrepareForPublish">
     <ItemGroup>
       <DocFile Include="bin\$(Configuration)\$(TargetFramework)\$(RuntimeIdentifier)\*.xml" />
     </ItemGroup>
     <Copy SourceFiles="@(DocFile)" DestinationFolder="$(PublishDir)" SkipUnchangedFiles="false" />
   </Target>
-
 </Project>
